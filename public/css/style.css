@@ -484,8 +484,18 @@ a.linkedin:hover {
 
 @media only screen
 	and (max-width : 768px) {
-		.footer-middle{
+		.navbar-header img{
+			margin-left: 30px;
+		}
+		.team-member {
+			margin-top: 30px;
+		}
+		.footer-middle {
 			margin-top:25px;
+		}
+		.footer-right {
+			margin-top: 25px;
+			margin-bottom: 25px;
 		}
 	}
 
