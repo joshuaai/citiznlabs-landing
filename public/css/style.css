@@ -1,0 +1,492 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+body {
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+	font-family: "Raleway", sans-serif;
+}
+
+body a {
+	text-decoration: none;
+}
+
+body a:hover {
+	text-decoration: none;
+}
+
+body a:focus, a:hover {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing:1px;
+}
+
+p {
+	margin:0;
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
+
+label {
+	margin:0;
+}
+
+a:focus, a:hover {
+	text-decoration: none;
+	outline: none
+}
+
+img {
+	width: 100%;
+}
+
+/*-- Navbar --*/
+.navbar {
+	margin-bottom: 0;
+	position: absolute;
+	z-index: 99999;
+	background:#272728;
+	border: none;
+	border-radius: 0;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.navbar-header img{
+	width:auto;
+	height: 60px;
+}
+
+.navbar-nav>li {
+	padding: 5px 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	font-size: 1.3em;
+	letter-spacing: .5px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #FF7D0B;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #FF7D0B;
+    background-color: transparent;
+}
+
+/*---------------------- Navbar Items ----------------*/
+.nav-items a {
+	padding: 30px;
+	color: #EA4807;
+	text-shadow: none;
+	font-family: 'Raleway', sans-serif;
+}
+
+.nav-items a::before, .nav-items a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #FF7D0B;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.nav-items a::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.nav-items a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.nav-items a:hover, .nav-items a:focus {
+	color: #fff;
+}
+
+.nav-items a:hover::before, .nav-items a:focus::before, .nav-items a:hover::after, .nav-items a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+/** -------------------------  Carousel Fade -------------------------------**/
+
+.carousel.fade {
+    opacity: 1;
+}
+
+.carousel.fade .item {
+    transition: opacity ease-out .7s;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.carousel.fade .item:first-child {
+    top: auto;
+    opacity: 1;
+    position: relative;
+}
+
+.carousel.fade .item.active {
+    opacity: 1;
+}
+
+.carousel-control {
+    opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+#featured .item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.fullheight {
+    display: block;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.item .slideimg {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+/* ------------------------------------------------------------- Page Styles --------------------------------------------------------------- */
+
+.page {
+  padding: 40px 0 5px 0;
+}
+
+.section-title-border {
+    padding: 0;
+    border: none;
+    border-top: 1px solid #F0F0F0;
+    color: #F0F0F0;
+    text-align: center;
+    margin: 0 0 10px 0;
+    line-height: 100%;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 30px;
+}
+
+.section-title-border:before {
+    background: #EA4807;
+    content: "";
+    height: 1px;
+    left: 25%;
+    position: absolute;
+    margin-top: -1px;
+    width: 50%;
+}
+
+.page h2 {
+	font-weight: 500;
+	margin-bottom: 20px;
+	color: #EA4807;
+}
+
+.about {
+	width: 100%;
+	text-align: center;
+}
+
+.about img {
+	width: 60px;
+	margin-bottom: 20px;
+}
+
+.about h3 {
+	margin: 10px 0px;
+}
+
+a.more{
+	color: #EA4807;
+	border: 2px solid #EA4807;
+	font-size: 14px;
+	padding: 7px 15px;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+a.more:hover {
+	color:#FFF;
+	background: #EA4807;
+}
+
+#about, #team {
+	margin-bottom: 35px;
+}
+
+#games {
+	background: #EEE;
+	padding-bottom: 70px;
+}
+
+/**--------------- Latest Games --------------**/
+
+.latest-game {
+    overflow: hidden;
+    position: relative;
+    margin-top: 2em;
+}
+
+.latest-game .mask {
+    width: 90%;
+    position: absolute;
+    overflow: hidden;
+    padding: 6.5em 0;
+	text-align: center;
+}
+
+.latest-game img {
+   display: block;
+   position: relative;
+}
+
+.latest-game h4 {
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.latest-bounce .mask {
+   background-color:rgba(0, 0, 0, 0.67);
+   top: -200px;
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.3s ease-out 0.5s;
+   -moz-transition: all 0.3s ease-out 0.5s;
+   transition: all 0.3s ease-out 0.5s;
+}
+
+.latest-bounce p {
+	color: #FF7D0B;
+}
+
+.latest-bounce:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+   top: 0px;
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   transition-delay: 0s;
+   -webkit-animation: bounceY 0.9s linear;
+   -moz-animation: bounceY 0.9s linear;
+   -ms-animation: bounceY 0.9s linear;
+   animation: bounceY 0.9s linear;
+   height: 100%;
+}
+
+.latest-bounce:hover p {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+
+/**------------------------- Team ------------------------**/
+.team-member {
+	text-align: center;
+}
+
+.team-member h3 {
+	margin-bottom: 5px;
+}
+
+.team-member img {
+	width: 80%;
+	margin-bottom: 20px; 
+}
+
+a.linkedin {
+	color: #0077B5;
+	border: 2px solid #0077B5;
+	font-size: 14px;
+	padding: 7px 15px;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+a.linkedin:hover {
+	color:#FFF;
+	background: #0077B5;
+}
+
+/**---------------- Reviews ---------------**/
+#reviews {
+	background: url(../images/sbbg.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	position: relative;
+	min-height: 400px;
+	padding: 100px 0px;
+}
+
+.review-info {
+    width:100%;
+	text-align:center;
+}
+
+#reviews h3{
+	color:#fff;
+	margin-bottom:10px;
+}
+
+.review-info-grid p{
+	text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 2px;
+	font-style:italic;
+	font-size:16px;
+	text-align:center;
+}
+
+.review-info a.more{
+	color:#fff;
+	border:2px solid #fff;
+}
+
+.review-info a.more:hover{
+	color:#fff;
+	border:2px solid #EA4807;
+	background: #EA4807;
+}
+
+/**-----------------Footer-----------------------------**/
+/*-- //footer --*/
+.footer{
+	padding:35px 0px;
+}
+
+.footer h4{
+	text-align:left;
+	color:#000;
+	font-size:27px;
+	margin-bottom:30px;
+}
+
+.footer-left ul li{
+	display:inline-block;
+	margin-bottom:35px;
+}
+
+.footer-left .glyphicon{
+	font-size:16px;
+	color: #EA4807;
+}
+
+.footer-left ul li h6{
+	font-size:16px;
+	color:#000;
+	margin-left:10px;
+	font-weight: 500;
+}
+
+.footer-left ul li a{
+	font-size:14px;
+	color:#000;
+}
+
+.footer-img-spacing {
+	margin-top: 25px;
+}
+
+.footer-right {
+	text-align: center;
+}
+
+.footer-right img {
+    width: 40%;
+}
+
+.footer-right p{
+	margin-top: 10px;
+	line-height:35px;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 500;
+	color: #000;
+}
+
+.copyright p {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    border-top: 1px dotted #EA4807;
+    padding: 30px 0px 0 0px;
+	font-weight: 500;
+}
+
+
+/**-------------- Media Queries --------------------**/
+
+@media only screen 
+    and (max-width : 768px)
+	and (min-width : 400px) {
+		.team-member img {
+			width: 60%;
+		}
+	}
+
+@media only screen
+	and (max-width : 768px) {
+		.footer-middle{
+			margin-top:25px;
+		}
+	}
+
+
