@@ -29,31 +29,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
 
-        <!-- Start of Async Drift Code -->
-        <script>
-        !function() {
-          var t;
-          if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
-          t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-          t.factory = function(e) {
-            return function() {
-              var n;
-              return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-            };
-          }, t.methods.forEach(function(e) {
-            t[e] = t.factory(e);
-          }), t.load = function(t) {
-            var e, n, o, i;
-            e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
-            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
-            n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-          });
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('ecett48w58fh');
-        </script>
-        <!-- End of Async Drift Code -->
-
     </head>
 
     <body>
@@ -145,36 +120,29 @@
                     </div>
 
                     <div class="container">
-                        <div class="row">
-                            <div class="section-title text-center">
-                                <h3>Experience</h3>
-                                <p>Work I've done...</p>
+                        <h3 class="workflow-heading">Our <span> Workflow</span></h3>  
+                        <div class="workflow">
+                            <div class="col-md-3 col-sm-6 workflow-grid">
+                                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                <h5>DJ Music</h5>
+                                <p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
                             </div>
-                        </div><!-- row -->
-
-                        <div class="row experience">
-                            <div class="col-sm-4 col-md-offset-1 col-md-4">
-                                <h4>Jun 2016 - Aug 2016</h4>
-                                <h6>Offshore Dimensions Limited</h6>
-                                <p>Lagos, Nigeria.</p>
+                            <div class="col-md-3 col-sm-6 workflow-grid">
+                                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                                <h5>Food & Drink</h5>
+                                <p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
                             </div>
-                            <div class="col-sm-8 col-md-6">
-                                <h4>Web Developer, E-Business Officer and Network Admninstrator</h4>
-                                <p>Created the company's website with responsive and content management features while setting the standard and format for the 
-                                company's engineering blog posts. I also managed all E-Business operations including online branding and SEO. The company's systems run on Windows Server 2008 R, so I worked as admin for the system and users. </p>
+                            <div class="col-md-3 col-sm-6 workflow-grid workflow-grid-bottom">
+                                <span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>
+                                <h5>Rain Dance</h5>
+                                <p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
                             </div>
-                        </div>
-                        <hr>
-                        <div class="row experience">
-                            <div class="col-sm-4 col-md-offset-1 col-md-4">
-                                <h4>Jun 2015 - Apr 2016</h4>
-                                <h6>ABU Teaching Hospital</h6>
-                                <p>Zaria, Nigeria.</p>
-                            </div>
-                            <div class="col-sm-8 col-md-6">
-                                <h4>Computer and Engineering Intern</h4>
-                                <p>Served in the Electrical Department for my one year National Youth Service.</p>
-                            </div>
+                            <div class="col-md-3 col-sm-6 workflow-grid workflow-grid-bottom">
+                                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                                <h5>Fireworks</h5>
+                                <p>Itaque earum rerum hic a sapiente delectus in auctor sapien.</p>
+                            </div> 
+                            <div class="clearfix"> </div>
                         </div>
                     </div>
                 </div>
@@ -189,37 +157,41 @@
                     <div class="col-sm-6 col-md-3 latest-game latest-bounce">
                         <img src="images/cover2.jpeg" alt="Ofia Quest - Citizn Labs" />
                         <div class="mask">
-                            <a href="#">
+                            <span href="#game1" class="play">
                                 <h4>Ofia Quest</h4>
                                 <p>Save the queen of Ofia</p>
-                            </a>
+                                <a href="#"><img src="images/google-play.svg" alt="Get it on Playstore" /></a>
+                            </span>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3 latest-game latest-bounce">
                         <img src="images/cover3.jpeg" alt="Faceme - Citizn Labs" />
                         <div class="mask">
-                            <a href="#">
+                            <span href="#game2" class="play">
                                 <h4>Faceme</h4>
                                 <p>Make new friends and take on local gangs</p>
-                            </a>
+                                <a href="#"><img src="images/google-play.svg" alt="Get it on Playstore" /></a>
+                            </span>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3 latest-game latest-bounce">
                         <img src="images/cover2.jpeg" alt="Street Hawker - Citizn Labs" />
                         <div class="mask">
-                            <a href="#">
+                            <span href="#game3" class="play">
                                 <h4>Street Hawker</h4>
-                                <p>Help the lady selling pay her bills</p>
-                            </a>
+                                <p>Help the lady selling pay her bills</p><br>
+                                <a href="#"><img src="images/google-play.svg" alt="Get it on Playstore" /></a>
+                            </span>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3 latest-game latest-bounce">
                         <img src="images/cover3.jpeg" alt="Trunk Fighter - Citizn Labs" />
                         <div class="mask">
-                            <a href="#">
+                            <span href="#game4" class="play">
                                 <h4>Trunk Fighter</h4>
                                 <p>Save our Elephants and stop illegal trunk trade</p>
-                            </a>
+                                <a href="#"><img src="images/google-play.svg" alt="Get it on Playstore" /></a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -343,17 +315,11 @@
                         <a href="#"><img src="images/cover3.jpeg" alt=" " /></a>
                     </div>
                     <div class="col-md-3 footer-img-spacing">
-                        <a href="#"><img src="images/cover2.jpeg" alt=" " /></a>
+                        <!--   <a href="#"><img src="images/cover2.jpeg" alt=" " /></a>   -->
                     </div>
-                    <div class="col-md-3 footer-img-spacing">
-                        <a href="#"><img src="images/cover3.jpeg" alt=" " /></a>
-                    </div>
-                    <div class="col-md-3 footer-img-spacing">
-                        <a href="#"><img src="images/cover2.jpeg" alt=" " /></a>
-                    </div>
-                    <div class="col-md-3 footer-img-spacing">
-                        <a href="#"><img src="images/cover3.jpeg" alt=" " /></a>
-                    </div>
+                    <div class="col-md-3 footer-img-spacing"></div>
+                    <div class="col-md-3 footer-img-spacing"></div>
+                    <div class="col-md-3 footer-img-spacing"></div>
                     <div class="clearfix"></div>
                 </div>
                 <div class="col-md-4 footer-right">
@@ -366,6 +332,31 @@
                 </div>
             </div>
         </div>
+
+        <!-- Start of Async Drift Code -->
+        <script>
+        !function() {
+          var t;
+          if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+          t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+          t.factory = function(e) {
+            return function() {
+              var n;
+              return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function(e) {
+            t[e] = t.factory(e);
+          }), t.load = function(t) {
+            var e, n, o, i;
+            e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+            n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+          });
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('ecett48w58fh');
+        </script>
+        <!-- End of Async Drift Code -->
 
     </body>
     
