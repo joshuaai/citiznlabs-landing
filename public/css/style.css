@@ -467,6 +467,26 @@ a.linkedin:hover {
 	color: #000;
 }
 
+.footer-middle {
+	margin-bottom: 20px;
+}
+
+.mest {
+	text-align: center;
+}
+
+.mest img {
+	display: inline-block;
+	width: initial;
+}
+
+.mest h6 {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	color: #EA4807;
+}
+
 .copyright p {
     text-align: center;
     font-size: 16px;
@@ -617,6 +637,12 @@ h3.workflow-heading span {
 		}
 		.footer-middle {
 			margin-top:25px;
+		}
+		.footer-middle {
+			margin-bottom: 0px;
+		}
+		.mest {
+			margin-top: 25px;
 		}
 		.footer-right {
 			margin-top: 25px;
