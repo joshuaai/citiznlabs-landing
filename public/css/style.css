@@ -189,7 +189,7 @@ img {
     filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
-/* ------------------------------------------------------------- Page Styles --------------------------------------------------------------- */
+/* -------------------------------------- Page Styles ------------------------------------------- */
 
 .page {
   padding: 40px 0 5px 0;
@@ -286,8 +286,13 @@ a.more:hover {
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: 2px;
+}
+
+.latest-game p {
+	margin-left: 10px;
+	margin-right: 15px;
 }
 
 .mask .play img {
@@ -346,6 +351,12 @@ a.more:hover {
 
 .team-member h3 {
 	margin-bottom: 5px;
+	margin-top: 2px;
+	font-weight: bold;
+}
+
+.team-member h3 span {
+	color: #EA4807;
 }
 
 .team-member img {
@@ -468,16 +479,18 @@ a.linkedin:hover {
 }
 
 .footer-middle {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 .mest {
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .mest img {
 	display: inline-block;
-	width: initial;
+	width: 30%;
+	height: auto;
 }
 
 .mest h6 {
@@ -608,6 +621,15 @@ h3.workflow-heading span {
 		.section-modal .modal-content {
 			margin-top: 120px;
 		}
+		.team-member-next {
+			margin-top: 25px;
+		}
+		.footer-left, .footer h4 {
+			text-align: center;
+		}
+		.footer-right img {
+			width: 25%;
+		}
 	}
 
 @media only screen 
@@ -620,7 +642,7 @@ h3.workflow-heading span {
 
 @media only screen
 	and (max-width : 768px) {
-		.navbar-header img{
+		.navbar-header img {
 			margin-left: 30px;
 		}
 		.modal-content .container {
@@ -632,21 +654,30 @@ h3.workflow-heading span {
 		.workflow .workflow-grid-bottom {
 			margin-top: 25px;
 		}
+		.latest-game h4 {
+			font-size: 1em;
+		}
+		.latest-game p {
+			font-size: 0.8em;
+		}
 		.team-member {
 			margin-top: 30px;
 		}
-		.footer-middle {
-			margin-top:25px;
+		.footer-left, .footer h4 {
+			text-align: center;
 		}
-		.footer-middle {
-			margin-bottom: 0px;
+		.footer-mid {
+			margin-bottom: 25px;
 		}
 		.mest {
 			margin-top: 25px;
+			margin-bottom: 0px;
 		}
 		.footer-right {
-			margin-top: 25px;
 			margin-bottom: 25px;
+		}
+		.footer-right img {
+			width: 25%;
 		}
 	}
 
